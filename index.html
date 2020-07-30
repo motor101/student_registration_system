@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<form method="POST" id="form" enctype="multipart/form-data">
+    <div class="selection">
+        <label for="first_name">Собствено име</label>
+        <input type="text" id="first_name" name="first_name">
+        <span id="first_name_warning"></span>
+    </div>
+    <div class="selection" id="">
+        <label for="last_name">Фамилия</label>
+        <input type="text" id="last_name" name="last_name">
+        <span id="last_name_warning"></span>
+    </div>
+    <div class="selection">
+        <label for="course">Курс</label>
+        <select id="course" name="course">
+            <option value="1">1-ви</option>
+            <option value="2">2-ри</option>
+            <option value="3">3-ти</option>
+            <option value="4">4-ти</option>
+            <option value="5">5-ти</option>
+            <option value="6">6-ти</option>
+        </select>
+        <span id="course_warning"></span>
+    </div>
+    <div class="selection">
+        <label for="major">Специалност</label>
+        <input type="text" id="major" name="major">
+        <span id="major_warning"></span>
+    </div>
+    <div class="selection">
+        <label for="faculty_number">Факултетен номер</label>
+        <input type="number" id="faculty_number" name="faculty_number">
+        <span id="faculty_number_warning"></span>
+    </div>
+    <div class="selection">
+        <label for="group">Номер на групата</label>
+        <select id="group" name="group">
+            <option value="1">1-вa</option>
+            <option value="2">2-рa</option>
+            <option value="3">3-тa</option>
+            <option value="4">4-тa</option>
+            <option value="5">5-тa</option>
+            <option value="6">6-тa</option>
+            <option value="7">7-мa</option>
+            <option value="8">8-мa</option>
+            <option value="9">9-тa</option>
+        </select>
+        <span id="group_warning"></span>
+    </div>
+    <div class="selection">
+        <label for="birth_date">Дата на раждане</label>
+        <input type="date" id="birth_date" name="birth_date">
+        <span id="birth_date_warning"></span>
+    </div>
+    <div class="selection">
+        <div>Име на зодията: <span id="zodiac_name"></span></div>
+        <div>Знак на зодията: <span id="zodiac_sign"></span></div>
+    </div>
+    <div class="selection">
+        <label for="url">Линк</label>
+        <input type="url" id="url" name="url">
+        <span id="url_warning"></span>
+    </div>
+    <div class="selection">
+        <label for="photo">Снимка</label>
+        <input type="file" id="photo" name="photo">
+        <span id="picture_warning"></span>
+    </div>
+    <div class="selection">
+        <label for="motivational_letter">Мотовация за канидидатстване</label>
+        <textarea rows="4" cols="50" placeholder="Напишете защо искате да кандидатствате при нас"
+                  id="motivational_letter" name="motivational_letter"></textarea>
+        <span id="motivational_letter_warning"></span>
+    </div>
+
+    <div>
+        <p>Моля, подпишете се в долното поле</p>
+        <canvas id="canvas" width="300" height="200"></canvas>
+        <button type="button" id="clear_canvas">Изчисти</button>
+        <button type="button" id="download_canvas">Изтегли подписа като изображение</button>
+    </div>
+
+    <div id="error_field">
+        <h3>Следните полета трябва да бъдат оправени, за да се приеме вашата заявка.</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Поле</th>
+                <th>Проблем</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <input type="submit" value="Изпращане на регистрацията">
+</form>
+</body>
+
+
+</html>

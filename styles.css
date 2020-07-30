@@ -1,0 +1,36 @@
+.selection {
+    padding: 10px;
+}
+
+.selection label {
+    display: block;
+}
+
+#canvas {
+    cursor: crosshair;
+    margin: 0;
+    border: black 1px solid;
+}
+
+#error_field {
+    display: none;
+}
+
+#error_field table tr:nth-child(even) {
+    background-color: bisque;
+}
+
+#error_field table {
+    border: 1px black solid;
+}
+
+#error_field table th {
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+}
+
+
